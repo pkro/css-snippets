@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+      }
+      article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      section {
+        width: 25%;
+        padding: 0 20px;
+        box-sizing: border-box; /* width/height should include bordr and padding*/
+        margin: 12px;
+        border-right: 1px solid #ccc;
+        position: relative;
+        text-align: center;
+      }
+      section img {
+        width: 100px;
+        margin-bottom: 8px;
+      }
+      section p {
+        display: none;
+      }
+      section:nth-child(4n + 1) {
+        width: 100%;
+        text-align: left;
+        border-right: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 15px 15px 180px;
+        background: orange;
+        min-height: 155px;
+      }
+      section:nth-child(4n + 1) p {
+        display: block;
+      }
+      section:nth-child(4n + 1) img {
+        width: 165px;
+        position: absolute; /* takes it out of flow and lets the other elements mive to the top; space for img is made with padding in line 39*/
+        left: 0px;
+      }
+      section:nth-child(4n) {
+        border-right: none;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+      <section>
+        <img src="img.png" alt="" />
+        <h2>Stuff!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+          consequuntur debitis dolores placeat error dolorum beatae doloremque
+          mollitia nulla animi?
+        </p>
+      </section>
+    </article>
+  </body>
+</html>

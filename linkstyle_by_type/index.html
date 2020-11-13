@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: rgb(122, 122, 247);
+      }
+      a {
+        color: white;
+      }
+      a[href$='.pdf'],
+      a[href$='.xls'] {
+        /* end ($) of the link equals*/
+        display: inline-block;
+        min-height: 40px;
+        background: no-repeat 0 0;
+        background-size: 35px 35px;
+        padding: 6px 0 0 45px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a[href$='.pdf'] {
+        background-image: url(file_pdf.svg);
+      }
+      a[href$='.xls'] {
+        background-image: url(file_xls.svg);
+      }
+      a[href$='.pdf']::after {
+        font-style: italic;
+        padding-left: 0.8rem;
+        color: rgba(255, 255, 255, 0.8);
+
+        content: '(pdf)';
+      }
+      a[href$='.xls']::after {
+        font-style: italic;
+        padding-left: 0.8rem;
+        color: rgba(255, 255, 255, 0.8);
+        content: '(xls)';
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="file.pdf">PDF download style</a></li>
+      <li><a href="file.xls">XLS download style</a></li>
+    </ul>
+  </body>
+</html>
