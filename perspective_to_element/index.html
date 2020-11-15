@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+        background-color: navajowhite;
+      }
+      main {
+        display: flex;
+      }
+      article {
+        width: 60%;
+        padding: 20px;
+        padding-right: 60px; /* make space for sidebar overlap */
+        background-color: white;
+        margin: 0 0 0 20px;
+      }
+      aside {
+        width: 30%;
+        line-height: 1.2rem;
+        margin: 45px 20px 1px -60px; /* overlap */
+      }
+      aside p {
+        margin: 0 0 40px 0;
+      }
+      aside > div {
+        background-color: orange;
+        padding: 20px 20px 1px 20px;
+        /*The perspective property defines how far the object is away from the user. 
+        Lower value -> more extreme 3d effect for the given transformation*/
+        transform: perspective(2000px) rotateY(-20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h2>Lorem, ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          architecto voluptates animi iste facere ut ipsa, excepturi quae
+          expedita, odit eligendi minima! Ut perferendis totam ad eos voluptates
+          exercitationem voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          architecto voluptates animi iste facere ut ipsa, excepturi quae
+          expedita, odit eligendi minima! Ut perferendis totam ad eos voluptates
+          exercitationem voluptatibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
+          perspiciatis!
+        </p>
+      </article>
+
+      <aside>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            a architecto quos ipsum molestias vitae sapiente eveniet excepturi
+            quasi rem?
+          </p>
+          <img src="img.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            a architecto quos ipsum molestias vitae sapiente eveniet excepturi
+            quasi rem?
+          </p>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

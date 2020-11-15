@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+      }
+      figure {
+        display: block;
+        /* for this to work pic original size needs to be quadratic */
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        float: right;
+        border: 1px solid black;
+        transform: rotate(45deg);
+        overflow: hidden;
+      }
+      figure img {
+        /* percentage values and degrees work for ALL diamond shapes*/
+        width: 141%;
+        margin-top: -20.5%;
+        margin-left: -20.5%;
+        transform: rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <img src="img.png" alt="" />
+    </figure>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+/*  This file was provided as part of a weekly web design tutorial series.
+    Sign-up for our newsletter at http://codifydesign.com/newsletter to
+    be notified about new episodes.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Pacifico');
+
+html {
+  font-size: 18px;
+  color: #5d4107;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(images/burlap_tile.jpg) repeat 0 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1;
+  color: #ae7e03;
+}
+
+h1 span {
+  display: block;
+  margin-top: 5px;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-style: normal;
+  color: #5d4107;
+}
+
+article {
+  padding: 100px 25px 20px 220px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+footer {
+  padding: 30px 30px 80px 220px;
+  background-color: rgba(67, 25, 0, 0.85);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: rgba(207, 143, 39, 0.9);
+  white-space: nowrap;
+}
+
+/* Da Box */
+.product {
+  /* size / bgcolor doesn't matter as it will be covered by box but must be set apparently (size)*/
+  /* do positioning and scaling for the whole shebang here */
+
+  /* everything gets skewed when comenting out sizes, why? */
+  width: 50px;
+  height: 50px;
+  background-color: silver;
+  perspective: 1000px; /* how far from the viewer*/
+  perspective-origin: center; /* viewer looking from the front*/
+  transform: scale(0.65); /* 65% of original size */
+  position: absolute;
+  bottom: 125px;
+  left: 30px;
+}
+
+.product .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border: 1px solid blue;  */
+  transform-style: preserve-3d; /* Indicates that the children of the element should be positioned in the 3D-space (?) */
+  transform: rotateX(-15deg) rotateY(26deg) translateZ(0px);
+  /* or view from the top: */
+  /* transform: rotateX(-55deg) rotateY(26deg) translateZ(0px); */
+}
+
+.product .box div {
+  position: absolute;
+  font-size: 4em;
+  /* border: 1px solid red; */
+  /* For the configurator, set individual bg images to the sides instead of translating the position for each */
+  background: url(images/box_design.jpg) no-repeat;
+  background-size: 400px 550px;
+}
+
+.product .box .top {
+  width: 200px;
+  height: 200px;
+  transform: rotateX(90deg) translateZ(100px);
+  background-position: -200px 0;
+}
+.product .box .front {
+  width: 200px;
+  height: 350px;
+  transform: translateZ(99px);
+  background-position: -200px -200px;
+}
+.product .box .left {
+  width: 200px;
+  height: 350px;
+  transform: rotateY(-90deg) translateZ(99px); /* with 100px there is a slight seam in some browsers, so 1 px overlap is better */
+  background-position: 0px -200px;
+}
