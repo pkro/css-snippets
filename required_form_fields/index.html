@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: rgb(53, 52, 52);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14pt;
+        margin: 60px;
+      }
+      input[type='text'] {
+        min-width: 30em;
+        max-width: 80em;
+        border: 0;
+        font-size: 16pt;
+        border-radius: 5px;
+      }
+      form > button {
+        width: fit-content;
+        align-self: center;
+      }
+      label {
+        display: block;
+        margin: 0.5em 0.2em 0.5em 0;
+        color: white;
+      }
+      /*label[for='agree'] {* this works too*/
+      input[type='checkbox'] + label {
+        /* label immediately after checkbox */
+        display: inline-block;
+      }
+
+      /* actual course stuff */
+      input:required {
+        border: 3px solid gold;
+      }
+      /* any label that appears immediately after an inpout field with required attribute */
+      input:required + label {
+        color: gold;
+      }
+
+      input:required + label::after {
+        content: 'required';
+        font-style: italic;
+        padding-left: 10px;
+        font-size: 0.8em;
+      }
+
+      form > div {
+        position: relative;
+      }
+      input:required + label::before {
+        content: '';
+        position: absolute;
+        top: 0.3em;
+        left: -35px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(bee.png) no-repeat 0 0;
+        background-size: contain; /* fit image size to div */
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="text" name="name" id="name" required />
+        <label for="name">Name</label>
+      </div>
+      <div>
+        <input type="text" name="email" id="email" required />
+        <label for="email">Email</label>
+      </div>
+      <div>
+        <input type="checkbox" name="agree" id="agree" required />
+        <label for="agree">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit">Submit!</button>
+    </form>
+  </body>
+</html>
