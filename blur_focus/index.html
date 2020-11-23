@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      BODY {
+        background: brown;
+      }
+      #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        width: 500px;
+      }
+      #gallery a {
+        display: inline-block;
+        width: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: filter 500ms, opacity, 500ms;
+      }
+      #gallery a img {
+        width: 100%;
+      }
+
+      #gallery:hover a {
+        /* Not just gallery:hover*/
+        filter: blur(4px);
+        opacity: 0.55;
+      }
+      #gallery:hover a:hover {
+        filter: blur(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gallery">
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+      <a href="#"><img src="bee.png" alt="" /></a>
+    </div>
+  </body>
+</html>
