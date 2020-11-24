@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #2c3702;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .photo {
+        width: 200px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; /* scale up to div size */
+        box-shadow: 0 0 10px 20px #2c3702 inset;
+      }
+
+      .photo::after {
+        content: '';
+        display: block;
+        padding-top: 125%;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Some art</h1>
+      <div class="photo" style="background-image: url(vasari.png)"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint possimus,
+        ab similique harum accusantium delectus ducimus ullam ex optio molestiae
+        nihil alias, aspernatur ipsam aliquid provident cupiditate officia natus
+        eius.
+      </p>
+    </article>
+  </body>
+</html>
