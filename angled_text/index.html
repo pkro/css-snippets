@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      BODY {
+        background: url(background.jpg) no-repeat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+      }
+      article {
+        transform: rotate(-9deg);
+        transform-origin: top left;
+        margin: 70px 50px 0 110px;
+        max-width: 500px;
+      }
+      article h1 {
+        color: white;
+      }
+      @media screen and (max-width: 450px) {
+        body {
+          background-position: -105px -20px;
+        }
+        h1 {
+          font-size: 1.4em;
+        }
+        article {
+          margin: 50px 50px 0 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Yay angled text</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit,
+        magni veniam! Placeat ipsa, rem labore voluptates nostrum quos
+        consequuntur dolorem reiciendis voluptatem optio doloremque eos magni
+        minima assumenda? Similique obcaecati, eaque veritatis possimus
+        exercitationem commodi eius illo inventore iste quaerat!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsam neque
+        adipisci veniam reiciendis quam ut dolorem magnam, inventore quo?
+      </p>
+    </article>
+  </body>
+</html>
