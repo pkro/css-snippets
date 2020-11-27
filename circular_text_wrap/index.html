@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>circular text wrap</title>
+    <style>
+      body {
+        background: black;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18pt;
+      }
+      article {
+        margin-left: 20px;
+      }
+      article h1 {
+        color: cornflowerblue;
+        margin-top: 2em;
+      }
+      article p {
+        font-size: 1.2em;
+        margin: 1rem 0 1rem 0;
+      }
+      article p:first-of-type {
+        margin-top: 1.5em;
+      }
+      article figure {
+        display: block;
+        margin: 0;
+        width: 260px;
+        height: 260px;
+        float: left;
+        shape-outside: circle(50%); /*main trick*/
+      }
+      article figure img {
+        width: 241px;
+        margin: 10px 0 0 -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium,
+        error.
+      </h1>
+      <figure>
+        <img src="earth.png" alt="earth.png" />
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, et,
+        provident cupiditate nesciunt, distinctio animi similique amet
+        temporibus architecto sit eaque eum laudantium sunt dolor eius? Vel
+        doloremque ratione voluptas!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, et,
+        provident cupiditate nesciunt, distinctio animi similique amet
+        temporibus architecto sit eaque eum laudantium sunt dolor eius? Vel
+        doloremque ratione voluptas!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, et,
+        provident cupiditate nesciunt, distinctio animi similique amet
+        temporibus architecto sit eaque eum laudantium sunt dolor eius? Vel
+        doloremque ratione voluptas! Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Numquam, possimus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis
+        temporibus corrupti eaque inventore, debitis explicabo ex minima eveniet
+        commodi voluptates enim ut laudantium aliquid reprehenderit dolores quam
+        mollitia. Alias nostrum qui sunt, dicta consequuntur dolore temporibus!
+        Accusantium dolorem quas, qui nostrum dignissimos nihil veritatis
+        voluptatum, quaerat illum impedit fuga.
+      </p>
+    </article>
+  </body>
+</html>
