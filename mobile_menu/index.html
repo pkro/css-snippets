@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffdfa7;
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        color: #2f2f2a;
+      }
+
+      p {
+        margin: 0 0 1em 0;
+      }
+
+      header {
+        margin: 0;
+        padding: 1px 0;
+        background: #000 url(banner.jpg) no-repeat center 0;
+        background-size: cover;
+        height: 145px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      header h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 6em;
+        line-height: 53px;
+        letter-spacing: 3px;
+        color: #241a12;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 70px;
+        bottom: 20px;
+        text-shadow: 2px 2px 0px #ffdfa7;
+        text-transform: uppercase;
+      }
+
+      article {
+        margin: 20px 78px;
+        line-height: 1.5em;
+      }
+
+      nav {
+        width: 180px;
+        background-color: #702e00;
+        padding: 10px 20px 10px 25px;
+        color: #fff;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0px;
+        left: -180px;
+        transition: left 0.3s ease-in-out;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 0;
+        padding: 14px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      nav a:first-of-type {
+        border-top: none;
+      }
+
+      nav label {
+        cursor: pointer;
+        display: block;
+        width: 42px;
+        height: 42px;
+        background: #702e00 url(menu_open.svg) no-repeat center center;
+        background-size: 22px auto;
+        position: absolute;
+        top: 78px;
+        right: -42px;
+      }
+
+      input#mobile_menu {
+        display: none;
+      }
+      /* + = element immediately after */
+      input#mobile_menu:checked + nav {
+        left: 0px;
+      }
+      input#mobile_menu:checked + nav label {
+        background-image: url(menu_close.svg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Wood</h1>
+    </header>
+
+    <input type="checkbox" name="mobile_menu" id="mobile_menu" />
+
+    <nav>
+      <label for="mobile_menu"></label>
+      <div>
+        <a href="#">Pine</a>
+        <a href="#">Spruce</a>
+        <a href="#">Larch</a>
+        <a href="#">Juniper</a>
+      </div>
+    </nav>
+    <article>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id dolores
+      error quos natus cum amet harum, aliquid cupiditate dolore alias minus
+      laborum, odit ullam accusantium. Similique quos eveniet officiis incidunt
+      labore. Ad, adipisci quae quas, quis cum alias quo ratione iusto dolore
+      repellat esse, earum eos! Optio unde quasi iusto culpa? Quos debitis
+      voluptatem cupiditate, quasi dolores unde, pariatur eaque architecto quia
+      excepturi, nesciunt nostrum sapiente voluptatum velit? Earum quo nisi
+      exercitationem, sint reiciendis mollitia quis provident ex non
+      voluptatibus voluptates sit possimus totam, expedita culpa suscipit maxime
+      doloremque! Esse quae eius veniam eaque nam obcaecati ducimus accusamus
+      quisquam!
+    </article>
+  </body>
+</html>
