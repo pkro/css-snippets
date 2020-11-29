@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background: linear-gradient(#1c64ad, #619cd8);
+        background-repeat: no-repeat;
+        height: 100%;
+      }
+      body {
+        color: white;
+        line-height: 1.25em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+      }
+      main {
+        margin: 15px;
+      }
+      section {
+        display: flex;
+        /*we handle this with media query below*/
+
+        /*flex-wrap: wrap; */
+      }
+      section div {
+        margin-right: 20px;
+      }
+      section div:last-of-type {
+      }
+      section div {
+        /*flex: 30%;*/
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+      section div h2 {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-bottom: 10px;
+      }
+      section img {
+        width: 80px;
+        float: left;
+        shape-outside: circle();
+        margin-right: 10px;
+      }
+
+      @media screen and (max-width: 550px) {
+        section {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Beeyard</h1>
+      <section>
+        <div>
+          <h2>Octagons</h2>
+          <img src="bee.png" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+            vel, nesciunt tenetur vero ipsa, doloribus velit quibusdam dolor
+            voluptatem excepturi doloremque eos voluptas minus corporis ducimus
+            eius dolorum impedit. Maxime necessitatibus sed commodi consequuntur
+            eius unde odit itaque iusto incidunt?
+          </p>
+        </div>
+        <div>
+          <h2>Octagons</h2>
+          <img src="bee.png" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+            vel, nesciunt tenetur vero ipsa, doloribus velit quibusdam dolor
+            voluptatem excepturi doloremque eos voluptas minus corporis ducimus
+            eius dolorum impedit. Maxime necessitatibus sed commodi consequuntur
+            eius unde odit itaque iusto incidunt?
+          </p>
+        </div>
+        <div>
+          <h2>Octagons</h2>
+          <img src="bee.png" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+            vel, nesciunt tenetur vero ipsa, doloribus velit quibusdam dolor
+            voluptatem excepturi doloremque eos voluptas minus corporis ducimus
+            eius dolorum impedit. Maxime necessitatibus sed commodi consequuntur
+            eius unde odit itaque iusto incidunt?
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
