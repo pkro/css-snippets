@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      html {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #d1dce1;
+        font-size: 16px;
+        color: #2f2f2a;
+        font-family: 'Roboto', sans-serif;
+      }
+      header {
+        background: url(bg.jpg);
+        background-size: cover;
+        height: 140px;
+        position: relative;
+      }
+      header h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 6rem;
+        position: absolute;
+        bottom: 0px;
+        line-height: 80px;
+        left: 1rem;
+        color: rgba(137, 173, 238, 0.8);
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+      }
+      nav {
+        background-color: #597994;
+        color: white;
+        padding: 0.2em 0 0.2em 1rem;
+        font-size: 1.4em;
+      }
+      nav a {
+        padding-bottom: 6px;
+        padding-top: 0.2em;
+
+        display: block;
+        color: white;
+        border-bottom: 1px solid silver;
+        text-decoration: none;
+      }
+      nav a:last-child {
+        border: 0;
+        padding-bottom: 0;
+      }
+      article {
+        font-size: 1.4em;
+        padding-left: 1rem;
+      }
+      article p {
+        line-height: 1.6em;
+      }
+
+      nav label {
+        display: block;
+        background: url(menu_open.svg) no-repeat 0 3px;
+        background-size: 20px auto;
+        padding: 0 0 10px 30px;
+        cursor: pointer;
+      }
+      nav label div {
+        margin: 10px 0 0 0;
+        display: none;
+        /* for transitioning down maybe height attr + overflow: hidden instead of display*/
+      }
+      nav label input[type='checkbox'] {
+        display: none;
+      }
+      /* for the millionth time: "~" = matches all following siblings, "+" = matches sibling if it immediately follows */
+      nav label input[type='checkbox']:checked + div {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Metal</h1>
+    </header>
+    <nav>
+      <label for="menu"
+        >Topics
+        <input type="checkbox" name="menu" id="menu" />
+        <div>
+          <a href="#">Props</a>
+          <a href="#">Alloy</a>
+          <a href="#">Ahoy</a>
+          <a href="#">anohter thing</a>
+        </div>
+      </label>
+    </nav>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nostrum
+        beatae ad obcaecati hic sunt autem velit distinctio doloremque amet,
+        numquam in, deserunt eveniet aliquam ex quae cum ut quo earum eos
+        architecto quas quia id! Consequatur officiis eum quasi odit amet non
+        provident mollitia sapiente itaque nulla laboriosam optio, iure dicta
+        animi autem ratione nisi accusamus, fugiat, id accusantium! Maiores,
+        numquam quidem blanditiis est hic facilis ratione repellat doloremque
+        velit! Impedit sed a distinctio laudantium. Modi, similique.
+        Necessitatibus aspernatur dicta officiis incidunt impedit amet, optio
+        commodi sapiente quos voluptas consequatur dolore, eos odio eaque totam
+        inventore dolorum dignissimos! Necessitatibus!
+      </p>
+    </article>
+  </body>
+</html>
