@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+      body {
+        font-size: 14px;
+        font-family: 'Noticia Text', serif;
+      }
+      h1 {
+        margin: 0 0 -5px 0;
+        font-size: 2.4em;
+        font-weight: 400;
+      }
+      article {
+        margin: 20px auto 0 auto;
+        width: 90%;
+      }
+      aside {
+        width: 100%;
+        margin: 35px 0;
+        background-image: url(banner.jpg);
+        background-size: cover;
+        height: 250px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0px 0px 6px #000;
+        font-family: 'Vast Shadow', cursive;
+        text-transform: uppercase;
+        display: table; /* this... */
+      }
+
+      aside div {
+        display: table-cell; /* and this... */
+        vertical-align: middle; /* ... lets us use table-only css properties */
+        text-align: center;
+        padding: 0 10px;
+      }
+      aside p {
+        margin: 0;
+        letter-spacing: 6px;
+        font-size: 1.3em;
+      }
+
+      aside p:last-of-type {
+        font-size: 2.3em;
+        letter-spacing: 14px;
+        margin: -6px 0 0 0;
+      }
+
+      @media screen and (max-width: 600px) {
+        aside {
+          height: 200px;
+        }
+        aside div p {
+          font-size: 1.1em;
+        }
+        aside div p:last-of-type {
+          font-size: 1.8em;
+          margin-top: -2px;
+          letter-spacing: 7px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Yay</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum magnam
+        delectus ipsum, dicta omnis blanditiis quaerat maxime, iste voluptates
+        voluptatem aspernatur minima officia illo, dolore fuga id labore aperiam
+        consectetur! Perspiciatis repudiandae, unde voluptatum quae adipisci
+        totam aperiam eos illo. Eveniet aspernatur eligendi repudiandae pariatur
+        facere unde libero quas distinctio?
+      </p>
+      <aside>
+        <div>
+          <p>Lorem, ipsum dolor.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </aside>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est cumque
+        quos officia ducimus, a earum vel quisquam ut dicta animi molestiae
+        ipsam blanditiis vero magni, debitis asperiores accusantium veritatis!
+        Animi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam culpa
+        doloribus maxime laborum in officia aliquid animi fugit assumenda
+        cumque, nulla, aperiam incidunt hic. Corporis sapiente corrupti numquam
+        tenetur quae? Dignissimos unde ea eaque soluta, cum eveniet voluptates
+        eius? Officia aliquam quasi ullam laudantium id fugiat beatae amet,
+        dolorem et sit illum. Officia reprehenderit quam libero, amet provident
+        aliquam obcaecati necessitatibus reiciendis dolor soluta odit eos enim
+        ea fugiat id!
+      </p>
+    </article>
+  </body>
+</html>
