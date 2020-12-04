@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(bg.jpg);
+        margin: 0;
+      }
+      article {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        margin: 0 auto 0 auto;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding: 1em 3em 1em 3em;
+      }
+      article p:first-of-type {
+        margin-top: 0;
+        padding-top: 5em;
+      }
+      article p {
+        padding-top: 1.2em;
+      }
+
+      /* first-letter only works if parent has display=block */
+      article p:first-of-type::first-letter {
+        font-size: 8em;
+        font-family: 'Sofia', cursive;
+        float: left;
+        line-height: 0.1em;
+        padding: 0;
+        color: rgba(255, 211, 141, 0.5);
+        margin: 0 -20px 0 -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum numquam
+        quod odit amet tempora at adipisci exercitationem obcaecati magnam
+        molestias, a nulla, quisquam dolorum labore repellat? Beatae pariatur
+        repudiandae reprehenderit eos eaque eius quaerat dolor deserunt
+        accusantium doloremque sit id sequi vero iure culpa quae eum iusto,
+        voluptates dolore? Porro!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum numquam
+        quod odit amet tempora at adipisci exercitationem obcaecati magnam
+        molestias, a nulla, quisquam dolorum labore repellat? Beatae pariatur
+        repudiandae reprehenderit eos eaque eius quaerat dolor deserunt
+        accusantium doloremque sit id sequi vero iure culpa quae eum iusto,
+        voluptates dolore? Porro!
+      </p>
+    </article>
+  </body>
+</html>
