@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+      html {
+        height: 100%;
+        font-size: 17px;
+        line-height: 1.5;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Crimson Text', serif;
+        transform-style: preserve-3d;
+      }
+      main {
+        display: block;
+        overflow-x: hidden;
+        /* added code for parallax */
+        height: 100vh;
+        max-height: 100%;
+        perspective: 1px; /*enables all child elements for 3d space*/
+        perspective-origin: center top;
+      }
+      header {
+        background: url(photo.jpg);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        padding: 1px 0;
+        box-sizing: border-box;
+        /* added / changed code for parallax */
+        height: 50vh;
+        perspective-origin: center top;
+        transform: translateZ(-1px) scale(2.03); /* header always behind content, a little larger so photo edges not visible left and right*/
+      }
+      header h1 {
+        position: absolute;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 0.9;
+        left: 35px;
+        bottom: 30%;
+        width: 100%;
+
+        color: white;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        padding: 10px;
+        background: linear-gradient(
+          to left,
+          rgba(27, 61, 87, 0.7) 70%,
+          #253d57 80%
+        );
+      }
+      main section {
+        background: white;
+        padding: 20px 35px;
+        transform: translateZ(
+          0
+        ); /* puts section in front of header, which is set to -1 */
+      }
+      p {
+        margin: 0 0 1rem 0;
+      }
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0 0 0.8rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Union Square</h1>
+      </header>
+      <section>
+        <h2>History</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          placeat totam enim magni animi provident tempora ipsa, est quidem
+          possimus quasi? Odit enim nemo quaerat vitae amet voluptas repudiandae
+          quo laudantium officia illo. Dolorem similique aliquam esse optio
+          perspiciatis, labore expedita tempore at numquam porro veniam qui
+          eius? Consequuntur provident dolor non, sed deserunt nihil doloribus
+          iure. Maxime pariatur earum quis beatae reiciendis reprehenderit nam
+          commodi laudantium, voluptate consequatur harum qui quod facilis
+          veniam deserunt distinctio corporis, at eius doloribus. Ut, aperiam
+          reiciendis? Earum, cupiditate quod aliquid voluptatibus ipsum sint
+          maxime. Laborum eveniet eius eum, quo repellat accusamus ea alias
+          facilis culpa mollitia iusto similique sequi libero enim, fuga in!
+          Quidem incidunt dolorum facilis, a dolor, reiciendis quia adipisci
+          obcaecati facere dignissimos nisi unde hic mollitia culpa error
+          delectus iusto exercitationem repudiandae laboriosam. Hic animi
+          officiis itaque, perferendis id laudantium sequi perspiciatis
+          assumenda quibusdam doloremque quam, modi architecto culpa reiciendis
+          recusandae ducimus at incidunt? Itaque ut a, quisquam et voluptatibus
+          nesciunt eveniet expedita iusto corrupti tenetur reprehenderit
+          mollitia culpa laboriosam optio eum voluptatum id provident
+          blanditiis! Doloribus est facilis mollitia repellat quibusdam eius
+          consequuntur, nulla non inventore minus similique voluptate vel nemo
+          sint deleniti officia! Aperiam commodi quia dolore impedit.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dicta
+          eveniet minus, nulla tenetur nobis hic at a perspiciatis odio veniam
+          assumenda vero molestias magni illum distinctio necessitatibus qui
+          quidem veritatis ex velit inventore mollitia voluptate? Corrupti nisi
+          voluptatum placeat blanditiis, voluptate eligendi dolorum iusto vero,
+          excepturi deleniti nesciunt. Praesentium hic, minus consequuntur eius
+          provident natus sit beatae! Dolorem, at.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat
+          aperiam obcaecati excepturi doloribus libero doloremque est sapiente!
+          Facere maiores neque, tempore provident cumque aspernatur nisi nihil
+          ratione earum perspiciatis dicta omnis vitae excepturi nesciunt illo
+          beatae rem, fuga, saepe praesentium sit. Ducimus tenetur minus iusto
+          nemo quasi amet maxime ut accusantium provident quae excepturi dolore
+          mollitia rerum necessitatibus voluptatibus fuga sint delectus,
+          blanditiis rem veritatis natus? Iusto quae voluptatum corrupti.
+          Mollitia sint perspiciatis sequi distinctio dolorem saepe voluptatum
+          sunt. Corrupti fugiat earum labore in nisi officia eos doloribus
+          veniam iste quibusdam voluptatem illum, consequuntur magnam recusandae
+          beatae sit ad. Commodi molestias perspiciatis quasi sit ipsum,
+          laudantium quod minima vel consectetur quos soluta possimus animi
+          rerum ipsam reiciendis velit veritatis pariatur eaque laborum
+          assumenda odit, repellat tempora. Quod, saepe aperiam repellat
+          temporibus mollitia ullam ex officiis omnis obcaecati tempore quo
+          ipsam reprehenderit cum nesciunt voluptas nam. Nisi, nam. Odio
+          perferendis eius cum, sint eaque saepe soluta dolores molestias quam
+          pariatur corrupti enim corporis sit error odit accusamus nulla
+          excepturi architecto. Perspiciatis odit totam pariatur qui corporis
+          labore aut illum dolore ducimus, sint delectus esse laborum eum itaque
+          repudiandae quam placeat atque, autem error magni unde exercitationem,
+          voluptatibus quasi inventore. Itaque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta
+          odit et recusandae suscipit, necessitatibus quae molestias aspernatur
+          impedit, quia eligendi libero minima quasi minus blanditiis explicabo
+          eos excepturi itaque culpa tempore. Quisquam culpa adipisci quis
+          earum, aspernatur eaque, necessitatibus natus dolore mollitia
+          voluptatem deleniti molestiae dolores, vitae delectus? Quasi magnam
+          rerum culpa sapiente vel? Aliquid minus unde repellendus, nemo fuga
+          quibusdam debitis labore voluptatem sapiente a nostrum, provident
+          omnis, repellat ipsum optio quo. Vel natus voluptatibus ipsa iste
+          nobis architecto amet rem minus rerum consequatur obcaecati, saepe
+          deleniti sed reprehenderit necessitatibus facere quo repellendus,
+          ullam sapiente adipisci debitis, distinctio commodi similique!
+          Corporis nesciunt a quaerat, ut illo blanditiis dolorum modi
+          distinctio maxime sint totam iste! Quos unde aperiam qui perferendis
+          corporis, autem nostrum blanditiis beatae quasi dolor modi maxime
+          eveniet exercitationem quas ullam pariatur quam dolores, voluptate
+          eius reprehenderit iste? In, dolorem? Quaerat aut, commodi recusandae
+          eum maxime omnis vitae inventore? Ipsam, voluptas at? Corrupti eos in
+          harum corporis dolor animi? Beatae nesciunt iusto magnam error eos
+          soluta consequuntur mollitia earum aliquid, dicta, aut reiciendis?
+          Consectetur ut voluptates sed, molestiae maiores, corporis deserunt
+          nulla quasi nemo laborum delectus architecto distinctio? Ipsa dolore
+          dicta tempore magnam amet nesciunt quod, in consequuntur, beatae
+          blanditiis quisquam voluptates porro? Nobis, quae itaque nesciunt
+          deleniti asperiores modi vero possimus quasi. Ea, facere laudantium?
+          Velit, fugit similique quos molestiae perspiciatis unde error enim
+          excepturi recusandae. Dolores fugiat illum unde facere ipsa ratione
+          non. Molestiae laboriosam totam deserunt cupiditate minus dolorum
+          aspernatur architecto tenetur dolor aut? Atque minus dolorem est
+          adipisci ut, a laboriosam minima maiores voluptate odit, sed
+          laudantium neque odio soluta. Ab, maiores consequatur vitae officiis
+          temporibus itaque neque laudantium. Quasi veritatis optio similique
+          sapiente ad ex voluptate quas debitis, nostrum, vel dolore corrupti
+          modi nulla deleniti accusantium commodi consequatur nisi possimus
+          reprehenderit. Quia.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
