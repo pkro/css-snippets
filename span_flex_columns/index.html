@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lobster|Oswald:300');
+      html {
+        font-size: 24px;
+      }
+      body {
+        font-family: 'Oswald', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: url(countertop.jpg) repeat-x center 0;
+        height: 160px;
+        padding: 20px 10px 30px 40px;
+      }
+      header h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 3rem;
+
+        color: white;
+      }
+      header img {
+        /* if parent isn't relative, it's absolute to the whole display area */
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      article {
+        margin-left: 2em;
+        height: auto; /* why? */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      article h2 {
+        width: 100%;
+      }
+      article > div {
+        width: 50%;
+      }
+      article h3 {
+        font-size: 1.4rem;
+        margin: 0 0 0.5rem 0;
+        color: #a58a00;
+      }
+
+      @media screen and (max-width: 760px) {
+        header {
+          height: 35px;
+        }
+
+        header h1 {
+          margin-top: 0;
+          font-size: 2.2rem;
+        }
+
+        header img {
+          width: 100px;
+        }
+
+        article {
+          display: block;
+        }
+
+        article > div {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Herbs and Spices</h1>
+      <img src="cutting_board.png" alt="cutting board with herbs and onions" />
+    </header>
+    <article>
+      <h2>The gist is flex + flex-wrap + setting widths of the flex items</h2>
+      <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          ratione mollitia nisi a in delectus dolorum? Eaque earum quis amet
+          ratione quos corporis praesentium commodi, sint accusamus deleniti,
+          unde, excepturi ipsa sunt velit expedita delectus et recusandae cum
+          doloremque at quod accusantium soluta id exercitationem! Quia nulla at
+          ab nisi!
+        </p>
+      </div>
+      <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          ratione mollitia nisi a in delectus dolorum? Eaque earum quis amet
+          ratione quos corporis praesentium commodi, sint accusamus deleniti,
+          unde, excepturi ipsa sunt velit expedita delectus et recusandae cum
+          doloremque at quod accusantium soluta id exercitationem! Quia nulla at
+          ab nisi!
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
