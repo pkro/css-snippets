@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        font-size: 20px;
+      }
+      article {
+        text-align: center;
+      }
+      article section {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: bisque;
+        justify-content: center;
+        align-content: flex-start;
+        margin-top: 20px;
+        border-top: 2px solid gray;
+        height: 100vh;
+      }
+
+      section a {
+        width: 220px;
+        height: 220px;
+        box-shadow: 5px 5px 5px darkgray;
+        margin: 16px;
+        padding: 0;
+        background-color: white;
+        color: darkgrey;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      section a img {
+        width: 200px;
+        height: 100px;
+      }
+      article input {
+        display: none;
+      }
+      article label {
+        padding: 3px 2rem 3px 2rem;
+        border: 1px solid gray;
+        cursor: pointer;
+      }
+
+      /* highlight selected label */
+      input#all:checked ~ label[for='all'],
+      input#design:checked ~ label[for='design'],
+      input#css:checked ~ label[for='css'],
+      input#js:checked ~ label[for='js'] {
+        color: black;
+        background-color: lightgray;
+        border-color: black;
+      }
+
+      input#design:checked ~ section a[data-skill~='design'],
+      input#css:checked ~ section a[data-skill~='css'],
+      input#js:checked ~ section a[data-skill~='js'] {
+        display: block;
+      }
+      input#design:checked ~ section a:not([data-skill~='design']),
+      input#css:checked ~ section a:not([data-skill~='css']),
+      input#js:checked ~ section a:not([data-skill~='js']) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Course samples</h1>
+      <p>Use the buttons to filter the list</p>
+      <input type="radio" name="skill" id="all" checked />
+      <input type="radio" name="skill" id="design" />
+      <input type="radio" name="skill" id="css" />
+      <input type="radio" name="skill" id="js" />
+
+      <label for="all">Show all</label>
+      <label for="design">Design</label>
+      <label for="css">css</label>
+      <label for="js">JavaScript</label>
+
+      <section>
+        <a href="#" data-skill="design"
+          ><img src="vasari.png" alt="" />article about design 1</a
+        >
+        <a href="#" data-skill="css"
+          ><img src="vasari.png" alt="" />article about css 1</a
+        >
+        <a href="#" data-skill="design"
+          ><img src="vasari.png" alt="" />article about design 2</a
+        >
+        <a href="#" data-skill="js"
+          ><img src="vasari.png" alt="" />article about js 1</a
+        >
+        <a href="#" data-skill="js"
+          ><img src="vasari.png" alt="" />article about js 3</a
+        >
+        <a href="#" data-skill="js"
+          ><img src="vasari.png" alt="" />article about js 4</a
+        >
+        <a href="#" data-skill="design"
+          ><img src="vasari.png" alt="" />article about design 3</a
+        >
+        <a href="#" data-skill="css"
+          ><img src="vasari.png" alt="" />article about css 2</a
+        >
+        <a href="#" data-skill="js"
+          ><img src="vasari.png" alt="" />article about js 5</a
+        >
+      </section>
+    </article>
+  </body>
+</html>
