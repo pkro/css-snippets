@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        position: relative;
+        padding-right: 800px;
+      }
+      img {
+        position: absolute;
+        right: -80px;
+        clip: rect(
+          80px,
+          900px,
+          200px,
+          320px
+        ); /*top right bottom left, not coordinates! */
+        margin-top: -80px; /* make up for 80px offset in clip */
+        transition: clip 1s ease-in;
+      }
+      img:hover {
+        clip: rect(80px, 900px, 100vh, 320px);
+        transition: clip 1s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        autem libero dolore dicta debitis pariatur ipsam reprehenderit
+        assumenda. Obcaecati, corporis.
+      </h1>
+      <img src="photo.jpg" alt="building" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam porro
+        modi necessitatibus odit ipsam ut, natus distinctio. Distinctio adipisci
+        recusandae quo incidunt voluptate, modi corrupti dolore culpa rem animi
+        ullam consectetur cum provident amet voluptatem perspiciatis optio quae
+        cupiditate facilis mollitia doloribus nemo aliquam. Aperiam rem incidunt
+        est recusandae?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+        accusamus deserunt eaque earum minima aliquid sunt blanditiis dicta
+        nesciunt voluptas. Asperiores molestias consequatur reiciendis vel
+        tempora neque debitis eos! Officia delectus, doloremque sint nihil neque
+        omnis aut ratione maxime quibusdam qui rerum error incidunt non quisquam
+        eaque ducimus molestiae voluptate quia dignissimos vitae veritatis
+        laudantium autem. Odio repudiandae, laudantium quasi beatae odit minima
+        veniam, ducimus, officiis dignissimos eligendi omnis tempore sequi. Sit
+        quisquam doloribus consequuntur, repudiandae corporis illo iste. Quod
+        quisquam impedit earum optio aliquid harum, totam consequatur repellat,
+        commodi pariatur quis quia labore quaerat sit cumque repudiandae minus!
+        Hic atque distinctio asperiores, maxime quia perspiciatis. Error
+        corporis aliquid officiis vero voluptas veniam! Quia error vitae
+        provident eaque, illo nesciunt, aperiam natus iste eligendi cupiditate
+        fugit iusto odit placeat est at nobis porro ipsam veniam velit. Illum
+        velit fugit corrupti atque. Repellat tempora explicabo blanditiis non
+        harum. Optio ea animi tenetur asperiores tempora laboriosam laudantium
+        nostrum pariatur, neque sit dicta deleniti eos iste delectus, amet ipsa.
+        Corrupti illum facilis labore sequi soluta excepturi consequatur.
+        Blanditiis libero facere repellendus officia sapiente eaque. Deleniti ex
+        repellendus labore ad culpa id. Libero error explicabo recusandae
+        sapiente commodi dolore quod nobis illo deleniti nulla.
+      </p>
+    </article>
+  </body>
+</html>
