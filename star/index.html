@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        /* variables don't work in ie11*/
+        --color-gold: #ffb400;
+      }
+      body {
+        background: url('restaurant.jpg');
+        background-position: center / cover;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      article {
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+        border: 3px solid var(--color-gold);
+        border-radius: 20px;
+        max-width: 600px;
+        margin: 20vh auto auto auto;
+        padding: 1.5rem;
+      }
+      article h1 {
+        font-family: 'Times New Roman', Times, serif;
+      }
+      article p {
+        line-height: 1.4rem;
+      }
+      footer {
+        background-color: aliceblue;
+        display: inline-block;
+        padding: 0.2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      /*pseudo elements are used so we don't have to create addtional diffs, afaiu*/
+      .star {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        margin: 0 0 0 -100px; /* offset border width to center it*/
+        border-bottom: 70px solid var(--color-gold);
+        border-right: 100px solid transparent;
+        border-left: 100px solid transparent;
+        /* scaling affects the elements pseudo elements as well*/
+        transform: rotate(35deg) scale(0.5);
+      }
+      .star::before {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        top: -45px;
+        left: -65px;
+        border-bottom: 80px solid var(--color-gold);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        transform: rotate(-35deg);
+      }
+      .star::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: -105px;
+        border-bottom: 70px solid var(--color-gold);
+        border-right: 100px solid transparent;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <div class="star"></div>
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        dolore obcaecati nostrum deserunt illum, explicabo enim dolorum
+        accusantium perferendis ratione quae optio dolorem maiores ullam
+        molestiae natus numquam dolor cupiditate quisquam molestias ipsa animi
+        voluptatum. Laboriosam temporibus nemo alias consequuntur eius
+        voluptatibus omnis. Temporibus suscipit deserunt consectetur iusto
+        doloremque dolores.
+      </p>
+    </article>
+    <footer>
+      <span
+        >Photo by
+        <a
+          href="https://unsplash.com/@k8_iv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >K8</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Unsplash</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
