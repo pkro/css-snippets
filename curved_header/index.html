@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+      body {
+        background-color: rgb(0, 70, 0);
+        color: aliceblue;
+      }
+
+      header {
+        text-align: center;
+      }
+      header h1 {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 4rem;
+      }
+      article {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto 10% auto 10%;
+      }
+
+      footer {
+        position: absolute;
+        padding: 5px;
+        bottom: 15px;
+        left: 0;
+        color: black;
+        background-color: antiquewhite;
+      }
+      /*** rounded starts here */
+
+      header > div {
+        background: url(img.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 15px 0 60px 0;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        /* so it doesn't curve up sharply on the sides */
+        width: 110%;
+        margin: 0 0 30px -5%; /* half of extra width; */
+        overflow: hidden; /* otherwise we'd have horizontal scrolling*/
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Hydrangea</h1>
+      </div>
+    </header>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae
+        aut accusantium quae cum iste doloribus adipisci odio sequi corporis est
+        voluptate, sint enim molestias id quod nihil deleniti ad vero quos illo
+        autem odit temporibus ab? Eveniet consequuntur id aliquam quia?
+        Architecto molestias natus quasi nam asperiores mollitia, possimus,
+        minima ratione rerum ipsam, quibusdam unde officia? Error, nostrum
+        soluta.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vitae
+        aut accusantium quae cum iste doloribus adipisci odio sequi corporis est
+        voluptate, sint enim molestias id quod nihil deleniti ad vero quos illo
+        autem odit temporibus ab? Eveniet consequuntur id aliquam quia?
+        Architecto molestias natus quasi nam asperiores mollitia, possimus,
+        minima ratione rerum ipsam, quibusdam unde officia? Error, nostrum
+        soluta.
+      </p>
+    </article>
+    <footer>
+      <span
+        >Photo by
+        <a
+          href="https://unsplash.com/@simone_dalmeri?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Simone Dalmeri</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/hydrangea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Unsplash</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
