@@ -1,0 +1,8 @@
+footer {
+  background-color: aliceblue;
+  display: inline-block;
+  padding: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
