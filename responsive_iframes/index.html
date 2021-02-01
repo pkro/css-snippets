@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --element-color: rgb(73, 37, 10);
+      }
+      body {
+        background-color: bisque;
+        color: var(--element-color);
+      }
+      main {
+        display: block;
+        width: 80%;
+        margin: 0 auto 0 auto;
+      }
+      h1 {
+        display: block;
+        width: 100%;
+        background-color: bisque;
+        border-bottom: 2px solid var(--element-color);
+        line-height: 50px;
+      }
+      .responsive {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      /* calculate ratio: default (from youtube embed code) is 
+      width="1079" height="607", so ratio is height / width * 100 (* 100 to get percentage value)
+      607 / 1079) * 100 = 56.25%
+      */
+      .responsive::before {
+        content: ''; /* must always be defined in pseudo elements */
+        display: block;
+        padding-top: calc((607 / 1079) * 100%); /* or just put 56.25%*/
+        /* padding-top: 56.25%; */
+      }
+      .responsive iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Responsive Iframes</h1>
+      <div class="responsive">
+        <iframe
+          src="https://www.youtube.com/embed/XZpGjX-LgrQ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et unde
+        similique enim illum quod repudiandae neque eveniet repellendus,
+        delectus dolor officia quos animi expedita veritatis eum autem cumque
+        deleniti! Doloribus dolore optio rem laborum pariatur qui, suscipit
+        totam itaque beatae maiores quae quod veritatis ipsa, magnam iure
+        placeat harum repudiandae. At nihil recusandae nulla, deleniti fugit
+        nisi ipsum dignissimos. Eius.
+      </p>
+    </main>
+  </body>
+</html>
