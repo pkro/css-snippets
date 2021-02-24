@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --white-key-width: 20px;
+        --black-key-width: 10px;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      .keyboard * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      .keyboard-top {
+        width: 1000px;
+        height: 160px;
+
+        background-image: repeating-linear-gradient(
+          90deg,
+          white 20px,
+          black 19px,
+          black 40px,
+          white 39px,
+          white 60px,
+          black 59px,
+          black 80px,
+          white 79px,
+          white 100px,
+          gray 99px,
+          gray 101px,
+          white 100px,
+          white 120px,
+          black 119px,
+          black 140px,
+          white 139px,
+          white 160px,
+          black 159px,
+          black 180px,
+          white 179px,
+          white 200px,
+          black 199px,
+          black 220px,
+          white 219px,
+          white 240px,
+          gray 239px,
+          gray 241px,
+          white 240px,
+          white 260px
+        );
+        background-position: top left;
+        background-origin: border-box;
+      }
+      .keyboard-bottom {
+        width: 1000px;
+        height: 100px;
+        background-image: repeating-linear-gradient(
+          90deg,
+          white 40px,
+          gray 39px,
+          gray 41px,
+          white 40px,
+          white 80px,
+          gray 79px,
+          gray 81px
+        );
+        background-position: -10px;
+        background-origin: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="keyboard">
+      <div class="keyboard-top"></div>
+      <div class="keyboard-bottom"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+      }
+      body {
+        margin: 0;
+      }
+      header {
+        background: center / cover url(amsterdam.jpg);
+        height: 250px;
+        position: relative;
+      }
+      header h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3em;
+        font-weight: normal;
+        color: white;
+        transform: scaleY(1.6); /* don't want to look for stretchy font */
+        letter-spacing: 0.3em;
+        position: absolute;
+        bottom: 0;
+        left: 1em;
+        text-shadow: 0 0 5px #000;
+      }
+      article {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        width: 94%;
+        margin: 1em auto 0 auto;
+      }
+      section {
+        margin: 30px 0 0 0;
+        display: flex;
+        /* justify-content: center; */
+      }
+      section a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #3e8ad5;
+        font-size: 1.1rem;
+        text-decoration: none;
+        margin: 0 0 20px 0;
+        padding: 0 10px 0 105px;
+        background-size: 90px auto;
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        min-height: 75px;
+        line-height: 1.2;
+        width: 50%;
+      }
+
+      footer {
+        background-color: aliceblue;
+        display: inline-block;
+        padding: 0.2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Amsterdam</h1>
+    </header>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        blanditiis, repudiandae quisquam asperiores officiis vero perferendis
+        corporis eaque quae optio voluptatum a corrupti nostrum iure minus!
+        Fugit et minima cumque possimus modi! Similique, quod aperiam porro, qui
+        necessitatibus illum harum quisquam, voluptates aut quos repellat
+        laboriosam doloremque cupiditate dolorum. Nostrum omnis dolorum
+        inventore corrupti nihil iure in, sequi mollitia illo nulla eveniet sunt
+        debitis necessitatibus reprehenderit ipsam dignissimos at hic quasi!
+        Reprehenderit quibusdam labore ab sequi qui, libero magnam cumque
+        sapiente. Consequatur nihil numquam tempore quisquam? Quos explicabo
+        inventore rerum delectus dolores temporibus itaque deleniti, eius magni
+        labore. Voluptas, fuga?
+      </p>
+      <section>
+        <a href="#" style="background-image: url(canal.jpg)" id="link-canal"
+          >Best boat tours in Amsterdam</a
+        >
+        <a
+          href="#"
+          style="background-image: url(windmill.jpg)"
+          id="link-windmill"
+          >Windmill hunt</a
+        >
+      </section>
+    </article>
+    <footer>
+      <span
+        >Photo by
+        <a
+          href="https://unsplash.com/@djmle29n?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Debbie Molle</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/amsterdam?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+          >Unsplash</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
