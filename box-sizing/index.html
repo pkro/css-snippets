@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+      html {
+        font-family: 'Raleway', sans-serif;
+      }
+      body {
+        background-color: darkgray;
+      }
+      article {
+        text-align: center;
+        width: 620px;
+        max-width: 90%; /* for mobile */
+        /* centering a relative positioned element  relative to parent; */
+        /* position: relative;
+        left: 50%;
+        transform: translateX(-50%); */
+        /* or simpler: */
+        margin-left: auto;
+        margin-right: auto;
+        /*or just use display: table-cell + related align rules*/
+      }
+      article h1 {
+        text-transform: uppercase;
+        letter-spacing: 0.8em;
+        color: silver;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
+      }
+      .gallery > a {
+        background: black;
+        text-align: center;
+        color: silver;
+        font-size: 0.9rem;
+        width: 31%;
+        overflow: hidden; /* so we don't have to pixel adjust the images every time so they don't overflow */
+        margin: 5px; /* with 33%, the margin makes the elements too large to fit so they break (uses 30px), so we set to 31% */
+        padding: 10px; /* makes it break to two columns again, what we don't want*/
+        box-sizing: border-box; /*force item to be still be 31% INCLUDING padding+border; default: content-box*/
+      }
+      /*nice, unobstrusive and simple */
+      .gallery > a:hover {
+        background-color: #444;
+        color: #fff;
+      }
+      .gallery img {
+        height: 120px;
+        max-width: 100%; /* prevents overflowing the padding */
+      }
+      footer {
+        margin-top: 2em;
+        border-top: 2px solid black;
+        text-align: center;
+      }
+      footer em {
+        color: white;
+        text-transform: lowercase;
+        font-style: normal;
+      }
+
+      @media screen and (max-width: 600px) {
+        .gallery > a {
+          width: 46%; /* as it breaks anyway make it larger */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Cinemagraphs</h1>
+      <div class="gallery">
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+        <a href="#"
+          ><img src="photo.jpg" alt="" />
+          <p>A photo caption</p></a
+        >
+      </div>
+    </article>
+    <footer>See all <em>Cinemagraphs</em> by Blah blah</footer>
+  </body>
+</html>

@@ -32,27 +32,27 @@
           black 59px,
           black 80px,
           white 79px,
-          white 100px,
-          gray 99px,
-          gray 101px,
-          white 100px,
-          white 120px,
-          black 119px,
-          black 140px,
-          white 139px,
-          white 160px,
-          black 159px,
-          black 180px,
-          white 179px,
-          white 200px,
-          black 199px,
-          black 220px,
-          white 219px,
-          white 240px,
-          gray 239px,
-          gray 241px,
-          white 240px,
-          white 260px
+          white 110px,
+          gray 109px,
+          gray 111px,
+          white 110px,
+          white 140px,
+          black 139px,
+          black 160px,
+          white 159px,
+          white 180px,
+          black 179px,
+          black 200px,
+          white 199px,
+          white 220px,
+          black 219px,
+          black 240px,
+          white 239px,
+          white 270px,
+          gray 269px,
+          gray 271px,
+          white 270px,
+          white 300px
         );
         background-position: top left;
         background-origin: border-box;
@@ -60,25 +60,40 @@
       .keyboard-bottom {
         width: 1000px;
         height: 100px;
-        background-image: repeating-linear-gradient(
-          90deg,
-          white 40px,
-          gray 39px,
-          gray 41px,
-          white 40px,
-          white 80px,
-          gray 79px,
-          gray 81px
-        );
-        background-position: -10px;
-        background-origin: border-box;
+        padding-top: 50px;
+        box-sizing: border-box;
+        font-size: 30px;
+        letter-spacing: 6.5px;
+        border-bottom: 1px solid gray;
+        background: repeating-linear-gradient(
+              90deg,
+              white 40px,
+              gray 39px,
+              gray 41px,
+              white 40px,
+              white 80px,
+              gray 79px,
+              gray 81px,
+              white 80px,
+              white 120px
+            ) -10px border-box,
+          repeating-linear-gradient(
+            180deg,
+            white 10px,
+            black 9px,
+            black 12px,
+            white 11px,
+            white 20px
+          );
+
+        background-origin: border-box, border-box;
       }
     </style>
   </head>
   <body>
     <div class="keyboard">
       <div class="keyboard-top"></div>
-      <div class="keyboard-bottom"></div>
+      <div class="keyboard-bottom">c d e f g a h c</div>
     </div>
   </body>
 </html>
